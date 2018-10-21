@@ -1,6 +1,6 @@
 <input type= "checkbox">
-          <hl><%=@todo_description%></hl>        
-          <h3>Todo #<%= params[:id] %></h3>
+          <hl><%=@todo.description%></hl>        
+          <h3>Todo #<%= @todo.id %></h3>
             <ul>
                 <li class="detListItem">Date:Today</li>
                 <li class="detListItem">Deetz: Do the things</li>
@@ -8,5 +8,8 @@
             </ul>
             <a href="index.html">Pervious
         </a>
+ <button class="show"><a id="addbutton" href="/todo/index">home</a></button>
+  <button class="show"><a id="addbutton" href="/todo/edit/<%= @todo.id%>">edit todo</a></button>
+ 
          
        
